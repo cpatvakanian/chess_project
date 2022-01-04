@@ -7,15 +7,38 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
 
-```{r loading packages and data}
+```{r loading packages and data, warning=FALSE}
 
-
+library(chessR)
+library(ggplot2)
+library(ggmosaic)
+library(mlogit)
 
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+```{r functions}
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+# function to extract chess.com game data
+#chessdotcom_game_data_all_months <- get_raw_chessdotcom(usernames = "JaseZiv")
+chessdotcom_hikaru_recent <- get_raw_chessdotcom(usernames = "Hikaru", year_month = c(202104:202105))
+
+
+# function to extract lichess game data
+#lichess_game_data <- get_raw_lichess("Hikaru")
+```
+
+```{r testing_data_single}
+
+chess_analysis_single <- get_game_data("JaseZiv")
+
+```
+```{r testing_data_multiple}
+
+# Need to use this video to get scraped data from all users
+# https://www.youtube.com/watch?v=4VfqVpTz4Q4
+
+chess_analysis_multiple <- get_game_data(c("JaseZiv", "elroch"))
+
+```
 
