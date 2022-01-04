@@ -3,9 +3,6 @@ title: "Chess Exploratory Data Analysis"
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
 
 ```{r loading packages and data, warning=FALSE}
 
@@ -30,7 +27,7 @@ chessdotcom_hikaru_recent <- get_raw_chessdotcom(usernames = "Hikaru", year_mont
 
 ```{r testing_data_single}
 
-chess_analysis_single <- get_game_data("JaseZiv")
+chess_analysis_single <- get_game_data("test")
 
 ```
 ```{r testing_data_multiple}
