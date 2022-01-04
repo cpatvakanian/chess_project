@@ -36,6 +36,9 @@ chess_analysis_single <- get_game_data("test")
 # Need to use this video to get scraped data from all users
 # https://www.youtube.com/watch?v=4VfqVpTz4Q4
 
+
+# Need to use this video to get scraped data from all users
+
 chess_analysis_multiple <- get_game_data(c("JaseZiv", "elroch"))
 
 ```
