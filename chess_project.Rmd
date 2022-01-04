@@ -18,7 +18,7 @@ library(gitcreds)
 
 ```{r functions}
 
-# function to extract chess.com game data
+# function to extract chess.com game data a
 
 #chessdotcom_game_data_all_months <- get_raw_chessdotcom(usernames = "JaseZiv")
 chessdotcom_hikaru_recent <- get_raw_chessdotcom(usernames = "Hikaru", year_month = c(202104:202105))
