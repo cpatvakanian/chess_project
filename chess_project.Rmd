@@ -10,6 +10,7 @@ library(chessR)
 library(ggplot2)
 library(ggmosaic)
 library(mlogit)
+library(devtools)
 library(gitcreds)
 
 ```
@@ -21,7 +22,6 @@ library(gitcreds)
 #chessdotcom_game_data_all_months <- get_raw_chessdotcom(usernames = "JaseZiv")
 chessdotcom_hikaru_recent <- get_raw_chessdotcom(usernames = "Hikaru", year_month = c(202104:202105))
 
-# testing new acccess token
 
 # function to extract lichess game data
 #lichess_game_data <- get_raw_lichess("Hikaru")
